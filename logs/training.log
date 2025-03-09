@@ -1,0 +1,183 @@
+2025-03-09 15:24:25,127 - INFO - collecting all words and their counts
+2025-03-09 15:24:25,127 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-03-09 15:24:25,183 - INFO - collected 46640 word types from a corpus of 704841 raw words and 2000 sentences
+2025-03-09 15:24:25,183 - INFO - Creating a fresh vocabulary
+2025-03-09 15:24:25,244 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 27181 unique words (58.28% of original 46640, drops 19459)', 'datetime': '2025-03-09T15:24:25.226091', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2025-03-09 15:24:25,244 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 685382 word corpus (97.24% of original 704841, drops 19459)', 'datetime': '2025-03-09T15:24:25.244672', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2025-03-09 15:24:25,300 - INFO - deleting the raw counts dictionary of 46640 items
+2025-03-09 15:24:25,300 - INFO - sample=0.001 downsamples 16 most-common words
+2025-03-09 15:24:25,300 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 670184.4444269405 word corpus (97.8%% of prior 685382)', 'datetime': '2025-03-09T15:24:25.300790', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2025-03-09 15:24:25,383 - INFO - estimated required memory for 27181 words and 100 dimensions: 35335300 bytes
+2025-03-09 15:24:25,383 - INFO - resetting layer weights
+2025-03-09 15:24:25,392 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-03-09T15:24:25.392326', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'build_vocab'}
+2025-03-09 15:24:25,392 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 27181 vocabulary and 100 features, using sg=0 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-03-09T15:24:25.392438', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'train'}
+2025-03-09 15:24:25,614 - INFO - EPOCH 0: training on 704841 raw words (670155 effective words) took 0.2s, 3030630 effective words/s
+2025-03-09 15:24:25,849 - INFO - EPOCH 1: training on 704841 raw words (670239 effective words) took 0.2s, 2857808 effective words/s
+2025-03-09 15:24:26,068 - INFO - EPOCH 2: training on 704841 raw words (670116 effective words) took 0.2s, 3067682 effective words/s
+2025-03-09 15:24:26,291 - INFO - EPOCH 3: training on 704841 raw words (670216 effective words) took 0.2s, 3017710 effective words/s
+2025-03-09 15:24:26,510 - INFO - EPOCH 4: training on 704841 raw words (670073 effective words) took 0.2s, 3064924 effective words/s
+2025-03-09 15:24:26,510 - INFO - Word2Vec lifecycle event {'msg': 'training on 3524205 raw words (3350799 effective words) took 1.1s, 2996619 effective words/s', 'datetime': '2025-03-09T15:24:26.510650', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'train'}
+2025-03-09 15:24:26,510 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=27181, vector_size=100, alpha=0.025>', 'datetime': '2025-03-09T15:24:26.510699', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'created'}
+2025-03-09 15:24:26,510 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models/word2vec.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-03-09T15:24:26.510762', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'saving'}
+2025-03-09 15:24:26,511 - INFO - not storing attribute cum_table
+2025-03-09 15:24:58,814 - INFO - collecting all words and their counts
+2025-03-09 15:24:58,815 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-03-09 15:24:58,871 - INFO - collected 46640 word types from a corpus of 704841 raw words and 2000 sentences
+2025-03-09 15:24:58,871 - INFO - Creating a fresh vocabulary
+2025-03-09 15:24:58,930 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 27181 unique words (58.28% of original 46640, drops 19459)', 'datetime': '2025-03-09T15:24:58.914544', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2025-03-09 15:24:58,930 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 685382 word corpus (97.24% of original 704841, drops 19459)', 'datetime': '2025-03-09T15:24:58.930946', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2025-03-09 15:24:58,986 - INFO - deleting the raw counts dictionary of 46640 items
+2025-03-09 15:24:58,987 - INFO - sample=0.001 downsamples 16 most-common words
+2025-03-09 15:24:58,987 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 670184.4444269405 word corpus (97.8%% of prior 685382)', 'datetime': '2025-03-09T15:24:58.987474', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2025-03-09 15:24:59,091 - INFO - estimated required memory for 27181 words and 100 dimensions: 35335300 bytes
+2025-03-09 15:24:59,091 - INFO - resetting layer weights
+2025-03-09 15:24:59,103 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-03-09T15:24:59.103630', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'build_vocab'}
+2025-03-09 15:24:59,103 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 27181 vocabulary and 100 features, using sg=0 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-03-09T15:24:59.103801', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'train'}
+2025-03-09 15:24:59,332 - INFO - EPOCH 0: training on 704841 raw words (670158 effective words) took 0.2s, 2945563 effective words/s
+2025-03-09 15:24:59,551 - INFO - EPOCH 1: training on 704841 raw words (670239 effective words) took 0.2s, 3076476 effective words/s
+2025-03-09 15:24:59,766 - INFO - EPOCH 2: training on 704841 raw words (670241 effective words) took 0.2s, 3127968 effective words/s
+2025-03-09 15:24:59,982 - INFO - EPOCH 3: training on 704841 raw words (670210 effective words) took 0.2s, 3106596 effective words/s
+2025-03-09 15:25:00,202 - INFO - EPOCH 4: training on 704841 raw words (670145 effective words) took 0.2s, 3052931 effective words/s
+2025-03-09 15:25:00,202 - INFO - Word2Vec lifecycle event {'msg': 'training on 3524205 raw words (3350993 effective words) took 1.1s, 3050477 effective words/s', 'datetime': '2025-03-09T15:25:00.202341', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'train'}
+2025-03-09 15:25:00,202 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=27181, vector_size=100, alpha=0.025>', 'datetime': '2025-03-09T15:25:00.202408', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'created'}
+2025-03-09 15:25:00,202 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models/word2vec.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-03-09T15:25:00.202491', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'saving'}
+2025-03-09 15:25:00,202 - INFO - not storing attribute cum_table
+2025-03-09 15:25:00,221 - INFO - saved models/word2vec.model
+2025-03-09 15:25:00,221 - INFO - ✅ Word2Vec model trained and saved.
+2025-03-09 15:25:02,618 - INFO - NaiveBayes Accuracy: 0.8150
+2025-03-09 15:25:03,550 - INFO - RandomForest Accuracy: 0.7950
+2025-03-09 15:25:14,630 - INFO - SVM Accuracy: 0.8425
+2025-03-09 15:29:29,044 - INFO - Final Model Accuracies: {'NaiveBayes': 0.815, 'RandomForest': 0.795, 'SVM': 0.8425}
+2025-03-09 15:57:53,573 - INFO - collecting all words and their counts
+2025-03-09 15:57:53,574 - INFO - PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2025-03-09 15:57:53,631 - INFO - collected 46640 word types from a corpus of 704841 raw words and 2000 sentences
+2025-03-09 15:57:53,631 - INFO - Creating a fresh vocabulary
+2025-03-09 15:57:53,690 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 27181 unique words (58.28% of original 46640, drops 19459)', 'datetime': '2025-03-09T15:57:53.673729', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2025-03-09 15:57:53,690 - INFO - Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 685382 word corpus (97.24% of original 704841, drops 19459)', 'datetime': '2025-03-09T15:57:53.690548', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2025-03-09 15:57:53,746 - INFO - deleting the raw counts dictionary of 46640 items
+2025-03-09 15:57:53,746 - INFO - sample=0.001 downsamples 16 most-common words
+2025-03-09 15:57:53,746 - INFO - Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 670184.4444269405 word corpus (97.8%% of prior 685382)', 'datetime': '2025-03-09T15:57:53.746738', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2025-03-09 15:57:53,830 - INFO - estimated required memory for 27181 words and 100 dimensions: 35335300 bytes
+2025-03-09 15:57:53,830 - INFO - resetting layer weights
+2025-03-09 15:57:53,838 - INFO - Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2025-03-09T15:57:53.838087', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'build_vocab'}
+2025-03-09 15:57:53,838 - INFO - Word2Vec lifecycle event {'msg': 'training model with 4 workers on 27181 vocabulary and 100 features, using sg=0 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2025-03-09T15:57:53.838151', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'train'}
+2025-03-09 15:57:54,060 - INFO - EPOCH 0: training on 704841 raw words (670290 effective words) took 0.2s, 3023115 effective words/s
+2025-03-09 15:57:54,279 - INFO - EPOCH 1: training on 704841 raw words (670247 effective words) took 0.2s, 3066445 effective words/s
+2025-03-09 15:57:54,495 - INFO - EPOCH 2: training on 704841 raw words (670227 effective words) took 0.2s, 3122007 effective words/s
+2025-03-09 15:57:54,712 - INFO - EPOCH 3: training on 704841 raw words (670092 effective words) took 0.2s, 3088196 effective words/s
+2025-03-09 15:57:54,927 - INFO - EPOCH 4: training on 704841 raw words (670155 effective words) took 0.2s, 3124259 effective words/s
+2025-03-09 15:57:54,927 - INFO - Word2Vec lifecycle event {'msg': 'training on 3524205 raw words (3351011 effective words) took 1.1s, 3075711 effective words/s', 'datetime': '2025-03-09T15:57:54.927676', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'train'}
+2025-03-09 15:57:54,927 - INFO - Word2Vec lifecycle event {'params': 'Word2Vec<vocab=27181, vector_size=100, alpha=0.025>', 'datetime': '2025-03-09T15:57:54.927733', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'created'}
+2025-03-09 15:57:54,927 - INFO - Word2Vec lifecycle event {'fname_or_handle': 'models/word2vec.model', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-03-09T15:57:54.927797', 'gensim': '4.3.3', 'python': '3.9.6 (default, Nov 11 2024, 03:15:38) \n[Clang 16.0.0 (clang-1600.0.26.6)]', 'platform': 'macOS-14.5-arm64-arm-64bit', 'event': 'saving'}
+2025-03-09 15:57:54,927 - INFO - not storing attribute cum_table
+2025-03-09 15:57:54,940 - INFO - saved models/word2vec.model
+2025-03-09 15:57:54,940 - INFO - ✅ Word2Vec model saved at models/word2vec.model
+2025-03-09 15:57:57,061 - INFO - ✅ TF-IDF vectorizer saved at models/vectorizer.pkl
+2025-03-09 15:57:57,375 - INFO - NaiveBayes Accuracy: 0.8150
+2025-03-09 15:57:57,431 - INFO - ✅ NaiveBayes model saved at models/naivebayes_model.pkl
+
+2025-03-09 15:57:58,300 - INFO - RandomForest Accuracy: 0.7950
+2025-03-09 15:57:58,375 - INFO - ✅ RandomForest model saved at models/randomforest_model.pkl
+
+2025-03-09 15:58:09,266 - INFO - SVM Accuracy: 0.8425
+2025-03-09 15:58:09,322 - INFO - ✅ SVM model saved at models/svm_model.pkl
+
+2025-03-09 16:04:27,196 - INFO - ✅ Best SVM Model saved at models/svm_best_model.pkl
+2025-03-09 16:04:27,197 - INFO - Final Model Accuracies: {'NaiveBayes': 0.815, 'RandomForest': 0.795, 'SVM': 0.8425}
+2025-03-09 16:30:09,067 - INFO - 🚀 Starting model training...
+2025-03-09 16:30:09,067 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 16:30:09,439 - INFO - 🔍 Checking for missing values in labels...
+2025-03-09 16:30:09,441 - INFO - ✅ Dropped 0 rows with missing labels
+2025-03-09 16:30:09,442 - INFO - 🔄 Converting labels to integers...
+2025-03-09 16:30:09,442 - INFO - ✂️ Splitting dataset into train and validation sets...
+2025-03-09 16:30:09,444 - INFO - ✅ Training set: 32000 samples, Validation set: 8000 samples
+2025-03-09 16:30:09,444 - INFO - ⚙️ Initializing TF-IDF Vectorizer...
+2025-03-09 16:30:12,211 - INFO - ✅ TF-IDF vectorization complete (max features: 5000)
+2025-03-09 16:30:12,211 - INFO - 🤖 Training SVM model...
+2025-03-09 16:45:49,243 - INFO - 🚀 Starting model training...
+2025-03-09 16:45:49,243 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 16:45:49,591 - INFO - 🔍 Checking for missing values in labels...
+2025-03-09 16:45:49,593 - INFO - ✅ Dropped 0 rows with missing labels
+2025-03-09 16:45:49,593 - INFO - 🔄 Converting labels to integers...
+2025-03-09 16:45:49,593 - INFO - ✂️ Splitting dataset into train and validation sets...
+2025-03-09 16:45:49,595 - INFO - ✅ Training set: 32000 samples, Validation set: 8000 samples
+2025-03-09 16:45:49,595 - INFO - ⚙️ Initializing TF-IDF Vectorizer...
+2025-03-09 16:45:52,373 - INFO - ✅ TF-IDF vectorization complete (max features: 5000)
+2025-03-09 16:45:52,373 - INFO - 🤖 Training SVM model...
+2025-03-09 16:48:30,952 - INFO - 🚀 Starting model training...
+2025-03-09 16:48:30,952 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 16:48:31,296 - INFO - 🔍 Checking for missing values in labels...
+2025-03-09 16:48:31,297 - INFO - ✅ Dropped 0 rows with missing labels
+2025-03-09 16:48:31,297 - INFO - 🔄 Converting labels to integers...
+2025-03-09 16:48:31,297 - INFO - ✂️ Splitting dataset into train and validation sets...
+2025-03-09 16:48:31,298 - INFO - ✅ Training set: 32000 samples, Validation set: 8000 samples
+2025-03-09 16:48:31,299 - INFO - ⚙️ Initializing TF-IDF Vectorizer...
+2025-03-09 16:48:34,086 - INFO - ✅ TF-IDF vectorization complete (max features: 3000)
+2025-03-09 16:48:34,086 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 16:48:34,291 - INFO - ✅ Model training complete in 0.20 seconds
+2025-03-09 16:48:34,291 - INFO - 💾 Saving trained model to models/svm_best_model.pkl
+2025-03-09 16:48:34,293 - INFO - 💾 Saving vectorizer to models/vectorizer.pkl
+2025-03-09 16:48:34,324 - INFO - 🎉 Training completed successfully! Model and vectorizer saved.
+2025-03-09 16:58:01,403 - INFO - 🚀 Starting model training...
+2025-03-09 16:58:01,403 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 16:58:01,767 - INFO - 🔍 Checking for missing values in labels...
+2025-03-09 16:58:01,769 - INFO - ✅ Dropped 0 rows with missing labels
+2025-03-09 16:58:01,769 - INFO - 🔄 Converting labels to integers...
+2025-03-09 16:58:01,769 - INFO - ✍️ Preprocessing text (handling negations)...
+2025-03-09 16:58:02,462 - INFO - ✂️ Splitting dataset into train and validation sets...
+2025-03-09 16:58:02,466 - INFO - ✅ Training set: 32000 samples, Validation set: 8000 samples
+2025-03-09 16:58:02,466 - INFO - ⚙️ Initializing TF-IDF Vectorizer (bigrams included)...
+2025-03-09 16:58:11,066 - INFO - ✅ TF-IDF vectorization complete (max features: 5000)
+2025-03-09 16:58:11,067 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 16:58:11,362 - INFO - ✅ Model training complete in 0.29 seconds
+2025-03-09 16:58:11,362 - INFO - 💾 Saving trained model to models/svm_best_model.pkl
+2025-03-09 16:58:11,364 - INFO - 💾 Saving vectorizer to models/vectorizer.pkl
+2025-03-09 16:58:11,419 - INFO - 🎉 Training completed successfully! Model and vectorizer saved.
+2025-03-09 17:03:12,359 - INFO - 🚀 Starting model training...
+2025-03-09 17:03:12,360 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 17:03:25,765 - INFO - ✅ TF-IDF vectorization complete (vocab size: 5000)
+2025-03-09 17:03:25,765 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 17:03:26,061 - INFO - ✅ Model training complete in 0.30 seconds
+2025-03-09 17:03:26,116 - INFO - 🎉 Training completed successfully! Model & vectorizer saved.
+2025-03-09 17:04:48,601 - INFO - 🚀 Starting model training...
+2025-03-09 17:04:48,601 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 17:05:12,876 - INFO - ✅ TF-IDF vectorization complete (vocab size: 8000)
+2025-03-09 17:05:12,877 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 17:05:13,209 - INFO - ✅ Model training complete in 0.33 seconds
+2025-03-09 17:05:13,297 - INFO - 🎉 Training completed successfully! Model & vectorizer saved.
+2025-03-09 17:07:37,924 - INFO - 🚀 Starting model training...
+2025-03-09 17:07:37,925 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 17:08:02,931 - INFO - ✅ TF-IDF vectorization complete (vocab size: 10000)
+2025-03-09 17:08:02,932 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 17:08:03,586 - INFO - ✅ Model training complete in 0.65 seconds
+2025-03-09 17:08:03,762 - INFO - 🎉 Training completed successfully! Model & vectorizer saved.
+2025-03-09 17:09:59,108 - INFO - 🚀 Starting model training...
+2025-03-09 17:09:59,109 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 17:10:23,879 - INFO - ✅ TF-IDF vectorization complete (vocab size: 10000)
+2025-03-09 17:10:23,880 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 17:10:25,207 - INFO - ✅ Model training complete in 1.33 seconds
+2025-03-09 17:10:25,399 - INFO - 🎉 Training completed successfully! Model & vectorizer saved.
+2025-03-09 17:13:30,300 - INFO - 🚀 Starting model training...
+2025-03-09 17:13:30,301 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 17:13:40,845 - INFO - ✅ TF-IDF vectorization complete (vocab size: 10000)
+2025-03-09 17:13:40,845 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 17:13:42,561 - INFO - ✅ Model training complete in 1.72 seconds
+2025-03-09 17:13:42,720 - INFO - 🎉 Training completed successfully! Model & vectorizer saved.
+2025-03-09 17:15:15,609 - INFO - 🚀 Starting model training...
+2025-03-09 17:15:15,609 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 17:15:25,790 - INFO - ✅ TF-IDF vectorization complete (vocab size: 12000)
+2025-03-09 17:15:25,791 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 17:15:28,674 - INFO - ✅ Model training complete in 2.88 seconds
+2025-03-09 17:15:28,879 - INFO - 🎉 Training completed successfully! Model & vectorizer saved.
+2025-03-09 17:21:31,197 - INFO - 🚀 Starting model training...
+2025-03-09 17:21:31,197 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 17:21:41,851 - INFO - ✅ TF-IDF vectorization complete (vocab size: 12000)
+2025-03-09 17:21:41,852 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 17:21:44,372 - INFO - ✅ Model training complete in 2.52 seconds
+2025-03-09 17:21:44,570 - INFO - 🎉 Training completed successfully! Model & vectorizer saved.
+2025-03-09 17:23:18,172 - INFO - 🚀 Starting model training...
+2025-03-09 17:23:18,172 - INFO - 📂 Loading dataset from data/Train.csv
+2025-03-09 17:23:29,200 - INFO - ✅ TF-IDF vectorization complete (vocab size: 12000)
+2025-03-09 17:23:29,200 - INFO - 🤖 Training Linear SVM model...
+2025-03-09 17:23:32,247 - INFO - ✅ Model training complete in 3.05 seconds
+2025-03-09 17:23:32,488 - INFO - 🎉 Training completed successfully! Model & vectorizer saved.
