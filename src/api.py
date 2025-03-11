@@ -64,10 +64,9 @@ async def predict_sentiment(input_data: TextInput):
 
         prediction = model.predict(text_svd)
         sentiment = int(prediction[0])
-
+        ans = "Positive" if sentiment == 1 else "Negative"
         logger.info(f"Prediction: {sentiment}")
-
-        return {"sentiment": sentiment}
+        return {"sentiment": ans}
     except Exception as e:
         logger.error(f"Prediction error: {e}")
         raise HTTPException(status_code=500, detail="Error in prediction.")
