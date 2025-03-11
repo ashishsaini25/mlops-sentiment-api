@@ -16,7 +16,7 @@ The preprocessing pipeline is implemented in `preprocess.py` and involves the fo
 
 5. **Lemmatization**: Words are reduced to their base or root form to consolidate similar terms.
 
-These steps help in transforming raw text into a structured format suitable for modeling. citeturn0search0
+These steps help in transforming raw text into a structured format suitable for modeling.
 
 **Model Selection and Optimization Approach**
 
